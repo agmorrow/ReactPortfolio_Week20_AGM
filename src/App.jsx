@@ -1,7 +1,7 @@
 import Navbar from './components/navbar/Navbar';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import About from './components/about/About';
-import { Portfolio } from './components/portfolio/Portfolio';
+import ProjectList from './components/projectList/ProjectList';
 import Contact from './components/contact/Contact';
 import { Resume } from './components/resume/Resume';
 import Footer from './components/footer/Footer';
@@ -16,7 +16,7 @@ function App() {
   
   <Routes>
     <Route path="/" element={<About/>}/>
-    <Route path="/portfolio" element={<Portfolio/>}/>
+    <Route path="/portfolio" element={<ProjectList/>}/>
     <Route path="/contact" element={<Contact/>}/>
     <Route path="/resume" element={<Resume/>}/>
   </Routes>
