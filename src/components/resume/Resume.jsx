@@ -1,8 +1,9 @@
 import React from 'react';
 import Browser from "../../img/browserIcon.png";
 import Server from "../../img/developmentIcon.png";
-import Data from "../../img/developmentIcon.png";
+import Data from "../../img/databaseIcon.png";
 import Dev from "../../img/deploymentIcon.png";
+import AustinResume from "../../img/AustinMorrow_Resume.pdf"
 import './resume.css';
 
 
@@ -10,7 +11,7 @@ export const Resume = () => {
 return (
   <div>
     <div className="skills" id="skills">
-    <h1 className="skillHeader">My Skills</h1>
+    <h1 className="skillHeader">My Proficiencies</h1>
     <div className="topSkills">
       <div className="skillCard">
       <img src={Browser} alt="" className="c-icon" />
@@ -36,6 +37,8 @@ return (
       </div>
     </div>
   </div>
+
+  <h3 className="resumeText">View my <span><a className="resume"href={AustinResume} alt="">resume</a></span></h3>
   </div>
 )
 }

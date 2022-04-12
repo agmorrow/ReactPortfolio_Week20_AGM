@@ -29,5 +29,21 @@
   flex-wrap: wrap;
 }
 
-/* End Skills Section */
-/* Start Projects Section */
+.resumeText {
+  display: flex;
+ justify-content: center;
+ margin-bottom: 50px;
+}
+
+.resume {
+  text-decoration: none;
+  color: #627D5D;
+  padding-left: 5px;
+}
+
+.resume:hover {
+  text-decoration: none;
+  color: #627D5D;
+  padding-left: 5px;
+  font-weight: bold;
+}

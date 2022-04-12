@@ -9,13 +9,13 @@ const Footer = () => {
 <>
   
   <Navbar bg="dark" variant="dark">
-    <Container>
+    <Container className="justify-content-center">
       <Navbar.Brand href="https://github.com/agmorrow">
         <img
           alt=""
           src={github}
-          width="30"
-          height="30"
+          width="42"
+          height="42"
           className="d-inline-block align-top"
         />{' '}
       </Navbar.Brand>
@@ -23,17 +23,17 @@ const Footer = () => {
         <img
           alt=""
           src={linkedin}
-          width="30"
-          height="30"
+          width="40"
+          height="40"
           className="d-inline-block align-top"
         />{' '}
       </Navbar.Brand>
-      <Navbar.Brand href="https://twitter.com/agmorrow_">
+      <Navbar.Brand href="">
         <img
           alt=""
           src={twitter}
-          width="30"
-          height="30"
+          width="40"
+          height="40"
           className="d-inline-block align-top"
         />{' '}
       </Navbar.Brand>
