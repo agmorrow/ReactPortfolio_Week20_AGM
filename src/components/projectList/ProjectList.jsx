@@ -2,7 +2,7 @@ import "./projectList.css";
 import { Portfolio } from "../portfolio/Portfolio"
 import {projects} from "../../data";
 
-const ProjectList = ({}) => {
+const ProjectList = () => {
   return (
     <div className="projectList">
         <div className="texts">

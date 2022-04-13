@@ -12,6 +12,8 @@ return (
 <div>
   <div className="skills" id="skills">
     <h1 className="skillHeader">My Proficiencies</h1>
+    <h3 className="resumeText">View my <span><a className="resume" href={AustinResume} alt="">resume</a></span></h3>
+
     <div className="topSkills">
       <div className="skillCard">
         <img src={Browser} alt="" className="c-icon" />
@@ -36,7 +38,6 @@ return (
         <p>Heroku, Git</p>
       </div>
     </div>
-    <h3 className="resumeText">View my <span><a className="resume" href={AustinResume} alt="">resume</a></span></h3>
   </div>
 
 
