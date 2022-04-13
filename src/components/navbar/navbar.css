@@ -1,3 +1,12 @@
+:root {
+  --light: #FFFFFF;
+  --primary-color: #627D5D;
+  --secondary-color: #756965;
+  --dark: #595959;
+  --secondary-dark: #DCDBDA;
+}
+
+
 .me-auto {
   margin-left: 300px;
 }
@@ -8,8 +17,35 @@
 }
 
 
-.brand {
-  color: #fff;
+.navbar-brand {
+  color: var(--light);
   font-size: 30px;
   font-family: "Shadows Into Light", "Helvetica Neue";
+}
+
+
+@media screen and (max-width: 991px) {
+  .navbar {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 903px) {
+  .navbar {
+    width: 100%;
+  }
+
+  .me-auto {
+    margin-left: 50px;
+  }
+}
+
+@media screen and (max-width: 652px) {
+  .navbar {
+    width: 100%;
+  }
+
+  .me-auto {
+    margin-left: 50px;
+  }
 }

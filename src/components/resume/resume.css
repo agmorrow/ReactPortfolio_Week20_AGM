@@ -1,16 +1,25 @@
+:root {
+  --light: #FFFFFF;
+  --primary-color: #627D5D;
+  --secondary-color: #756965;
+  --dark: #595959;
+  --secondary-dark: #DCDBDA;
+}
+
 .skills {
   width: 100%;
   margin: auto;
   text-align: center;
   margin-top: 2.5rem;
-  background-color: var(--secondary-dark);
+  background-color: var(--light);
+  height: 100vh;
 }
 
 .skillHeader {
   padding-top: 50px;
   margin-bottom: 1rem;
   font-size: 40px;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Quicksand', sans-serif;
 }
 
 .topSkills,
@@ -31,8 +40,8 @@
 
 .resumeText {
   display: flex;
- justify-content: center;
- margin-bottom: 50px;
+  justify-content: center;
+  margin-top: 50px;
 }
 
 .resume {
@@ -46,4 +55,23 @@
   color: #627D5D;
   padding-left: 5px;
   font-weight: bold;
+}
+
+@media screen and (max-width: 526px) {
+  .resumeText {
+    margin-top: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 485px) {
+  .skillCard {
+    padding-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 464px) {
+  .skillCard {
+    padding: 5px;
+  }
+
 }

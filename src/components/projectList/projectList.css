@@ -1,3 +1,11 @@
+:root {
+  --light: #FFFFFF;
+  --primary-color: #627D5D;
+  --secondary-color: #756965;
+  --dark: #595959;
+  --secondary-dark: #DCDBDA;
+}
+
 .projectList {
   padding: 50px 100px;
   display: flex;
@@ -12,11 +20,7 @@
 
 .title {
   font-size: 50px;
-  font-weight: 600;
-}
-
-.description {
-  margin: 20px 0px;
+ 
 }
 
 .list {
@@ -25,3 +29,16 @@
   flex-wrap: wrap;
   justify-content: space-between;
 }
+@media screen and (max-width: 754px) {
+  .text{
+  flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 687px) {
+  .list {
+   flex-direction: column;
+   align-items: center;
+  }
+}
+

@@ -4,22 +4,27 @@ import {Link} from 'react-router-dom';
 import "./navbar.css";
 
 
+
 const AppNavbar = () => {
-  return (
-    <>
-    <Navbar bg="dark" variant="dark">
+return (
+<>
+  <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
     <Container>
-    <Navbar className="brand">Morrow Web Development</Navbar>
-    <Nav className="me-auto">
-    <Nav.Link as={Link} to="/">About</Nav.Link>
-      <Nav.Link as={Link} to="/portfolio">Portfolio</Nav.Link>
-      <Nav.Link as={Link} to="/contact">Contact</Nav.Link>
-      <Nav.Link as={Link} to="/resume">Resume</Nav.Link>
-    </Nav>
+      <Navbar.Brand style={{ fontSize: 30 }}>Morrow Web Development</Navbar.Brand>
+      <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+      <Navbar.Collapse id="responsive-navbar-nav">
+        <Nav className="me-auto">
+          <Nav.Link as={Link} to="/">About</Nav.Link>
+          <Nav.Link as={Link} to="/portfolio">Portfolio</Nav.Link>
+          <Nav.Link as={Link} to="/contact">Contact</Nav.Link>
+          <Nav.Link as={Link} to="/resume">Resume</Nav.Link>
+        </Nav>
+      </Navbar.Collapse>
     </Container>
-    </Navbar>
-    </>
-  );
+  </Navbar>
+
+</>
+);
 };
 
 export default AppNavbar;

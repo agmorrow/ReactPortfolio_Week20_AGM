@@ -1,8 +1,51 @@
+:root {
+  --light: #FFFFFF;
+  --primary-color: #627D5D;
+  --secondary-color: #756965;
+  --dark: #595959;
+  --secondary-dark: #DCDBDA;
+}
+
 .projectCard {
   width: 30%;
   height: 40vh;
   margin: 20px 10px;
-  border: 2px solid rgb(243, 242, 242);
-  border-radius: 10px 10px 0px 0px;
+  border-radius: 10px 10px 10px 10px;
   overflow: hidden;
+  box-shadow: 0 3px 10px var(--dark);
+}
+
+.image {
+  width: 100%;
+}
+
+.icon {
+  width: 35px;
+  height: 35px;
+  margin: 8px;
+}
+
+.text {
+  font-size: 16px;
+}
+
+@media screen and (max-width: 799px) {
+  .projectCard {
+    width: 275px;
+  height: 50vh;
+  }
+}
+
+
+@media screen and (max-width: 789px) {
+  .projectCard {
+  align-items: center;
+  }
+}
+
+@media screen and (max-width: 687px) {
+  .projectCard {
+    width: 250px;
+  height: 50vh;
+  }
 }

@@ -1,0 +1,15 @@
+:root {
+  --light: #FFFFFF;
+  --primary-color: #627D5D;
+  --secondary-color: #756965;
+  --dark: #595959;
+  --secondary-dark: #DCDBDA;
+}
+
+
+@media screen and (max-width: 596px) {
+.navbar {
+margin-top: 20px;
+}
+
+}

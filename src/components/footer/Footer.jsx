@@ -7,9 +7,8 @@ import twitter from "../../img/icons8-twitter-circled.svg";
 const Footer = () => {
   return (
 <>
-  
-  <Navbar bg="dark" variant="dark">
-    <Container className="justify-content-center">
+  <Navbar fixed="bottom" bg='dark' fluid>
+    <Container className="justify-content-center" fluid>
       <Navbar.Brand href="https://github.com/agmorrow">
         <img
           alt=""
@@ -28,7 +27,7 @@ const Footer = () => {
           className="d-inline-block align-top"
         />{' '}
       </Navbar.Brand>
-      <Navbar.Brand href="">
+      <Navbar.Brand href="https://twitter.com/agmorrow_">
         <img
           alt=""
           src={twitter}

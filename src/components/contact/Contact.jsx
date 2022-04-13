@@ -2,67 +2,59 @@ import "./contact.css";
 import Phone from "../../img/icons8-phone-50.png";
 import Email from "../../img/icons8-email-open-50.png";
 import Address from "../../img/icons8-address-50.png";
-import { useContext, useRef, useState } from "react";
-import emailjs from "emailjs-com";
+import React, {useRef} from "react";
+import emailjs from '@emailjs/browser';
 
 
 const Contact = () => {
-  const formRef = useRef();
-  const [done, setDone] = useState(false)
+  const form = useRef();
  
-  const handleSubmit = (e) => {
+  const sendEmail = (e) => {
     e.preventDefault();
-    emailjs
-      .sendForm(
-        "service_s3uvglu",
-        "template_3v5nih4",
-        formRef.current,
-        "user_DrriDPTGKO2Zj4RDXCA6W"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-          setDone(true)
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
-  };
+    emailjs.sendForm('service_s3uvglu', 'template_t18bqkw', form.current, 'O5h-T0liyMIsf2Pzc')
+    .then((result) => {
+        alert(result.text);
+    }, (error) => {
+        alert(error.text);
+    });
+};
 
   return (
-    <div className="c">
-      <div className="c-bg"></div>
-      <div className="c-wrapper">
-        <div className="c-left">
-          <h1 className="c-title">Let's connect!</h1>
-          <div className="c-info">
-            <div className="c-info-item">
-              <img src={Phone} alt="" className="c-icon" />
+    <div className="contact">
+      <div className="contact-wrapper">
+        <div className="contact-left">
+          <h1 className="contact-title">Let's connect!</h1>
+          <div className="contact-info">
+            <div className="contact-info-item">
+              <img src={Phone} alt="" className="contact-icon" />
               720.985.9184
             </div>
-            <div className="c-info-item">
-              <img className="c-icon" src={Email} alt="" />
+            <div className="contact-info-item">
+              <img className="contact-icon" src={Email} alt="" />
               morrow.austin5@gmail.com
             </div>
-            <div className="c-info-item">
-              <img className="c-icon" src={Address} alt="" />
+            <div className="contact-info-item">
+              <img className="contact-icon" src={Address} alt="" />
               Denver, CO
             </div>
           </div>
         </div>
-        <div className="c-right">
-          <p className="c-desc">
-            I would love to connect if the right project comes along!
+        <div className="contact-right">
+          <p className="contact-desc">
+            Send a message
           </p>
-          <form ref={formRef} onSubmit={handleSubmit}>
-            <input type="text" placeholder="Name" name="user_name" />
-            <input type="text" placeholder="Subject" name="user_subject" />
-            <input type="text" placeholder="Email" name="user_email" />
-            <textarea rows="5" placeholder="Message" name="message" />
-            <button>Submit</button>
-            {done && "Thank you..."}
-          </form>
+      
+    <form ref={form} onSubmit={sendEmail}>
+      <label>Name</label>
+      <input type="text" name="user_name" />
+      <label>Subject</label>
+      <input type="text" name="user_subject" />
+      <label>Email</label>
+      <input type="email" name="user_email" />
+      <label>Message</label>
+      <textarea  name="message" />
+      <input type="submit" value="Send" />
+    </form>
         </div>
       </div>
     </div>

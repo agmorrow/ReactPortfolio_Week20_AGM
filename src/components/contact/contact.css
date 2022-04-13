@@ -1,38 +1,42 @@
-.c {
+:root {
+  --light: #FFFFFF;
+  --primary-color: #627D5D;
+  --secondary-color: #756965;
+  --dark: #595959;
+  --secondary-dark: #DCDBDA;
+}
+
+.contact {
   height: 100vh;
   position: relative;
 }
 
-.c-bg {
-  width: 20px;
-  height: 100%;
-  background-color: #756965;
-  position: absolute;
-}
-
-.c-wrapper {
+.contact-wrapper {
   padding: 50px;
   display: flex;
 }
 
-.c-left {
+.contact-left {
+  margin-top: 50px;
   flex: 1;
 }
 
-.c-right {
+.contact-right {
+  margin-top: 50px;
   flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
-.c-title {
-  font-size: 60px;
+.contact-title {
+  font-size: 50px;
   width: 80%;
 }
 
-.c-info-item {
+.contact-info-item {
   display: flex;
   align-items: center;
   margin: 50px 0px;
@@ -40,62 +44,75 @@
   width: 70%;
 }
 
-.c-icon {
+.contact-icon {
   width: 30px;
   height: 30px;
   margin-right: 20px;
 }
 
-.c-desc {
-  font-weight: 200;
+.contact-desc {
+  font-size: 30px;
 }
 
 form {
   margin-top: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+  box-shadow: 0 3px 10px var(--dark);
+  border-radius: 5px 5px 5px 5px;
 }
 
 input {
-  width: 50%;
+  width: 100%;
   height: 50px;
-  border: none;
-  border-bottom: 1px solid black;
-  margin: 10px 0px;
+  margin: 20px 0px;
   font-size: 14px;
   padding-left: 10px;
+  border: none;
 }
 
 textarea {
   width: 100%;
-  margin: 10px 0px;
   font-size: 14px;
   padding-left: 10px;
+  border: none;
 }
 
-button {
+label {
+  box-shadow: 0 3px 3px var(--secondary-dark);
+  width: 100%;
+}
+
+input[type="submit"] {
   border: none;
   padding: 15px;
-  background-color: #627D5D;
-  color: white;
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  width: 35%;
+  background-color: var(--primary-color);
+  color: var(--light);
   font-weight: 500;
   cursor: pointer;
+  border-radius: 5px 5px 5px 5px;
 }
 
-@media screen and (max-width: 480px) {
-  .c-wrapper {
+@media screen and (max-width: 687px) {
+  .contact-wrapper {
     flex-direction: column;
     padding: 0px 50px;
   }
 
-  .c-title {
+  .contact-title {
     font-size: 30px;
   }
 
-  .c-info-item {
+  .contact-info-item {
     margin: 20px 0px;
     width: 100%;
   }
 
-  .c-desc {
+  .contact-desc {
     display: none;
   }
 
@@ -115,4 +132,25 @@ button {
   button {
     margin-top: 10px;
   }
+}
+
+
+@media screen and (max-height: 667px) {
+
+  form {
+    margin-top:-50px;
+  height: 50vh;
+  }
+
+
+  input {
+    width: 35%;
+    height: 20px;
+    margin: 10px;
+    margin-left: 0;
+  }
+.contact-wrapper {
+  padding: 0px 20px;
+}
+
 }
