@@ -14,6 +14,9 @@ My task was to create a portfolio using my new React skills, which will help set
 
 ## General Information
 
+### Link to deployed application
+https://react-portfolio-agm.herokuapp.com/
+
 ## Technologies
 
 ## Setup
