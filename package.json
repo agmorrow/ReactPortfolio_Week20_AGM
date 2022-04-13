@@ -2,7 +2,7 @@
   "name": "week_20_agm",
   "version": "0.1.0",
   "homepage": "https://myusername.github.io/week_20_agm",
-  "private": true,
+  "private": false,
   "dependencies": {
     "@emailjs/browser": "^3.6.2",
     "@testing-library/jest-dom": "^5.16.4",
