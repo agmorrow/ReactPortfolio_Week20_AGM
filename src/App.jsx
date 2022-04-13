@@ -1,5 +1,5 @@
 import Navbar from './components/navbar/Navbar';
-import {HashRouter, Routes, Route} from 'react-router-dom';
+import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import About from './components/about/About';
 import ProjectList from './components/projectList/ProjectList';
 import Contact from './components/contact/Contact';
@@ -10,7 +10,7 @@ import Footer from './components/footer/Footer';
 function App() {
   return (
     <div className="App">
-  <HashRouter>
+  <BrowserRouter basename="/ReactPortfolio_Week20_AGM" />
       <div>
     <Navbar/>
   
@@ -21,7 +21,7 @@ function App() {
     <Route path="/resume" element={<Resume/>}/>
   </Routes>
     </div>
-    </HashRouter>
+    <BrowserRouter basename="/ReactPortfolio_Week20_AGM" />
     <Footer />
     </div>
   );
